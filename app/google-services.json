@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "8212243523",
+    "firebase_url": "https://myapplication3-97a61.firebaseio.com",
+    "project_id": "myapplication3-97a61",
+    "storage_bucket": "myapplication3-97a61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8212243523:android:e711231090c8c0a2",
+        "android_client_info": {
+          "package_name": "bluebirdmessengers.com.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8212243523-1atsjsj5nc0ftm627jikq1tbhdg9rhnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bluebirdmessengers.com.myapplication",
+            "certificate_hash": "d97760550e9b033b099cac8e72d6e143604d7da3"
+          }
+        },
+        {
+          "client_id": "8212243523-6mh029bv8k8020iarvekc900o0upm4im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3hNezpCTeA5vYuIZQO2qvYRBPlm4Ylvs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8212243523-6mh029bv8k8020iarvekc900o0upm4im.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

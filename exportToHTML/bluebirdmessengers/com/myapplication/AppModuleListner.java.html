@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>AppModuleListner.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+AppModuleListner.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">bluebirdmessengers.com.myapplication; 
+ 
+</span><span class="s0">import </span><span class="s1">android.util.Log; 
+ 
+</span><span class="s0">import </span><span class="s1">com.apptracker.android.listener.AppModuleListener; 
+ 
+</span><span class="s2">/** 
+ * Created by YANTRA on 3/10/2017. 
+ */</span><span class="s1"> 
+ 
+</span><span class="s0">public final class </span><span class="s1">AppModuleListner { 
+} 
+    </span><span class="s0">private class </span><span class="s1">AppModuleListener{ leadboltListener; 
+ 
+ 
+    { 
+        leadboltListener = </span><span class="s0">new </span><span class="s1">AppModuleListener() { 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onModuleLoaded(String location) { 
+                Log.i(</span><span class="s3">&quot;AppTracker&quot;</span><span class="s1">, </span><span class="s3">&quot;Ad loaded successfully - &quot; </span><span class="s1">+ location); 
+                </span><span class="s2">// Add code here to pause game and/or all media including audio</span><span class="s1"> 
+            } 
+ 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onModuleFailed(String location, String error, </span><span class="s0">boolean </span><span class="s1">isCache) { 
+                </span><span class="s0">if </span><span class="s1">(isCache) { 
+                    Log.i(</span><span class="s3">&quot;AppTracker&quot;</span><span class="s1">, </span><span class="s3">&quot;Ad failed to cache - &quot; </span><span class="s1">+ location); 
+                } </span><span class="s0">else </span><span class="s1">{ 
+                    Log.i(</span><span class="s3">&quot;AppTracker&quot;</span><span class="s1">, </span><span class="s3">&quot;Ad failed to display - &quot; </span><span class="s1">+ location); 
+                } 
+            } 
+ 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onModuleClosed(String location) { 
+                Log.i(</span><span class="s3">&quot;AppTracker&quot;</span><span class="s1">, </span><span class="s3">&quot;Ad closed by user - &quot; </span><span class="s1">+ location); 
+                </span><span class="s2">// Add code here to resume game and/or all media including audio</span><span class="s1"> 
+            } 
+ 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onModuleClicked(String location) { 
+                Log.i(</span><span class="s3">&quot;AppTracker&quot;</span><span class="s1">, </span><span class="s3">&quot;Ad clicked by user - &quot; </span><span class="s1">+ location); 
+            } 
+ 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onModuleCached(String location) { 
+                Log.i(</span><span class="s3">&quot;AppTracker&quot;</span><span class="s1">, </span><span class="s3">&quot;Ad cached successfully - &quot; </span><span class="s1">+ location); 
+                </span><span class="s2">// Add code if not auto-recaching for when loadModuleModuleToCache is successful</span><span class="s1"> 
+            } 
+ 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onMediaFinished(</span><span class="s0">boolean </span><span class="s1">viewCompleted) { 
+                </span><span class="s0">if </span><span class="s1">(viewCompleted) { 
+                    Log.i(</span><span class="s3">&quot;AppTracker&quot;</span><span class="s1">, </span><span class="s3">&quot;User finished watching rewarded video&quot;</span><span class="s1">); 
+                } </span><span class="s0">else </span><span class="s1">{ 
+                    Log.i(</span><span class="s3">&quot;AppTracker&quot;</span><span class="s1">, </span><span class="s3">&quot;User skipped watching rewarded video&quot;</span><span class="s1">); 
+                } 
+            } 
+        }; 
+    } 
+ 
+        </span><span class="s0">public </span><span class="s1">AppModuleListener() { 
+        } 
+ 
+        @Override 
+        </span><span class="s0">public </span><span class="s1">String toString() { 
+            </span><span class="s0">return </span><span class="s3">&quot;AppModuleListener{}&quot;</span><span class="s1">; 
+        }</span></pre>
+</body>
+</html>
